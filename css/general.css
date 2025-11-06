@@ -62,13 +62,21 @@ body {
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
+
+  margin-bottom: 9.6rem;
 }
 
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
 .grid--2--cols {
   grid-template-columns: repeat(2, 1fr);
 }
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .grid--center-v {
@@ -194,38 +202,4 @@ body {
 }
 strong {
   font-weight: 500;
-}
-.plan-header {
-  text-align: center;
-  margin-bottom: 4.8rem;
-}
-.plan-name {
-  color: #cf711f;
-  font-weight: 600;
-  font-size: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.75;
-  margin-bottom: 3.2rem;
-}
-.plan-price {
-  font-size: 6.2rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 1.6rem;
-}
-.plan-price span {
-  font-size: 3rem;
-  font-weight: 500;
-  margin-right: 0.8rem;
-}
-
-.plan-text {
-  font-size: 1.6rem;
-  line-height: 1.6;
-  color: #6f6f6f;
-}
-
-.plan-sing-up {
-  text-align: center;
-  margin-top: 4.8rem;
 }
